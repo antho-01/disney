@@ -1,0 +1,275 @@
+.section2 {
+      display: block;
+      background-color:  rgb(0, 0, 51);
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+      margin-top: .5rem;
+}
+
+.section2 h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+      letter-spacing: .15rem;
+      margin-bottom: 2rem;
+      font-family: 'Times New Roman';
+}
+
+.route {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2.5rem
+}
+
+.overflow {
+      width: 26rem;
+      height: 15rem;
+      overflow: hidden;
+      border-radius: .5rem;
+}
+
+.card {
+      position: relative;
+      width: 26rem;
+      height: 15rem;
+}
+
+.myimg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+}
+
+.myimg:hover {
+      transform: scale(1.02);
+}
+
+.title {
+      position: absolute;
+      color: white;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding: .5rem;
+}
+
+
+
+
+.route a {
+      width: 30%;
+      height: auto;
+      display: block;
+      color: white;
+      font-family: sans-serif;
+      font-size: 1rem;
+}
+
+
+
+/* .route a img:hover {
+      transform: scale(1.01);
+} */
+
+.route span {
+      display: inline-block;
+}
+
+
+.imgcontainerLogo {
+      position: relative;
+      width: 65%;
+      height: 2rem;
+      margin: 0 auto;
+      margin-top: 3rem;
+
+}
+
+
+.imgcontainerLogo img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+}
+
+.spanS {
+      display: block;
+      text-align: center;
+      margin-top: 2.5rem;
+}
+
+.spanS span {
+      display: inline-block;
+      border-radius: 10rem;
+      background-color: rgb(59, 59, 255);
+      padding: .8rem 2.5rem;
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+
+}
+
+.terms {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: white;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+      .section2 h2 {
+            font-size: 1.1rem;
+      }
+
+      .overflow {
+            min-width: 15rem;
+            height: 10rem;
+            overflow: hidden;
+            border-radius: .5rem;
+      }
+      
+      .card {
+            position: relative;
+            min-width: 23rem;
+            height: 10rem;
+      }
+      
+      .myimg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+      }
+
+      .title {
+            font-size: .7rem;
+      }
+
+      .imgcontainerLogo {
+            width: 100%;
+            height: .6rem;
+      }
+
+      .spanS span {
+            font-size: .8rem;
+            padding: .5rem 1rem;
+      }
+
+      .terms {
+            font-size: .6rem;
+      }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+      .section2 h2 {
+            font-size: 1.25rem;
+      }
+
+      
+      .overflow {
+            min-width: 15rem;
+            height: 10rem;
+            overflow: hidden;
+            border-radius: .5rem;
+      }
+      
+      .card {
+            position: relative;
+            min-width: 23rem;
+            height: 10rem;
+      }
+      
+      .myimg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+      }
+
+      .title {
+            font-size: .7rem;
+      }
+
+    
+
+      .imgcontainerLogo {
+            width: 100%;
+            height: .9rem;
+      }
+
+      .title {
+            font-size: .75rem;
+      }
+
+      .imgcontainerLogo {
+            max-width: 70%;
+            height: .9rem;
+      }
+
+      .spanS span {
+            font-size: .8rem;
+            padding: .5rem 1rem;
+      }
+
+      .terms {
+            font-size: .6rem;
+      }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+      .section2 h2 {
+            font-size: 1.25rem;
+      }
+
+
+      
+      .overflow {
+            min-width: 10rem;
+            height: 10rem;
+            overflow: hidden;
+            border-radius: .5rem;
+      }
+      
+      .card {
+            position: relative;
+            min-width: 23rem;
+            height: 10rem;
+      }
+      
+      .myimg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+      }
+
+      .title {
+            font-size: .8rem;
+      }
+
+
+   
+
+      .spanS span {
+            font-size: .75rem;
+            padding: .5rem 1rem;
+      }
+
+      .terms {
+            font-size: .7rem;
+      }
+
+      .imgcontainerLogo {
+            max-width:100%;
+            height: .9rem;
+      }
+}

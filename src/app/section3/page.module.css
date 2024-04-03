@@ -1,0 +1,88 @@
+.section3 {
+      padding: 3.2rem 0;
+      height: auto;
+      background-color: #e8e8e8;
+}
+
+.overflow {
+      width: 300px;
+      height: 500px;
+      overflow: hidden;
+      border-radius: .5rem;
+}
+.img {
+      width: 300px;
+      height: 500px;
+      position:relative;
+      
+}
+
+.img:hover {
+      transform: scale(1.02);
+}
+
+.dimg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+}
+
+
+
+.route {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+}
+
+.route a {
+      transition: all .3s ease-out;
+      overflow: hidden;
+}
+
+.route a:hover {
+      transform: scale(1.1);
+}
+
+.section3 h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+}
+
+.overflow > .s3p{
+      font-size: .8rem;
+      color: rgb(44, 44, 44);
+      font-size: 1rem;
+      position: absolute;
+      font-family: sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+      .section3 h2  {
+            font-size: 1.5rem;
+      }
+      .s3p {
+            font-size: .8rem;
+      }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+      .section3 h2 {
+            font-size: 1.7rem;
+      }
+      .s3p {
+            font-size: .8rem;
+      }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+      .section3 h2 {
+            font-size: 1.8rem;
+      }
+      .s3p {
+            font-size: .85rem;
+      }
+}

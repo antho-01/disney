@@ -1,0 +1,148 @@
+.footer {
+      height: auto;
+      padding: 2.5rem 0;
+}
+
+.footer p { 
+      text-align: center;
+      font-size: 1.2rem;
+}
+
+.p2 {
+      padding: 1rem;
+}
+
+.ficon {
+      font-size: 1.7rem;
+}
+
+.flogo{
+      margin-top: 1.6rem;
+      margin-bottom: .8rem;
+}
+
+.writeUps {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: auto;
+      gap: 1.4rem;
+      font-family: sans-serif;
+      color: rgb(54, 54, 54);
+      padding: 0 1rem;
+}
+
+.writeUps p {
+      font-size: .9rem;
+      cursor: pointer;
+      transition: all .5s;
+      line-height: .5rem;
+      font-weight: 540;
+}
+
+.writeUps p:hover {
+      color: rgb(63, 63, 255);
+      
+}
+
+.footer > .privacy {
+      margin-top: 1rem;
+      font-family: sans-serif;
+      color: #585858;
+      font-size: .9rem;
+      line-height: 1.2rem;
+      padding:0 .5rem
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+      .footer {
+            padding: 1.3rem 0;
+      }
+
+      .footer > .p1 {
+            font-size: .85rem;
+      }
+
+      .flogo {
+            margin-top: .1rem;
+      }
+
+      .writeUps p {
+            font-size: .75rem;
+            cursor: pointer;
+            transition: all .5s;
+            line-height: .5rem;
+            font-weight: 540;
+      }
+
+      .footer > .privacy {
+            margin-top: 1rem;
+            font-family: sans-serif;
+            color: #585858;
+            font-size: .7rem;
+            line-height: 1.2rem;
+            padding:0 .5rem
+      }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+      .footer {
+            padding: 1.3rem 0;
+      }
+
+      .footer > .p1 {
+            font-size: .85rem;
+      }
+
+      .flogo {
+            margin-top: .5rem;
+      }
+
+      .writeUps p {
+            font-size: .7rem;
+            cursor: pointer;
+            transition: all .5s;
+            line-height: .1rem;
+            font-weight: 540;
+      }
+
+      .footer > .privacy {
+            margin-top: 1rem;
+            font-family: sans-serif;
+            color: #585858;
+            font-size: .7rem;
+            line-height: 1.2rem;
+            padding:0 .5rem
+      }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+      .footer {
+            padding: 1.3rem 0;
+      }
+
+      .footer > .p1 {
+            font-size: .85rem;
+      }
+
+      .flogo {
+            margin-top: .5rem;
+      }
+
+      .writeUps p {
+            font-size: .7rem;
+            cursor: pointer;
+            transition: all .5s;
+            line-height: .1rem;
+            font-weight: 540;
+      }
+
+      .footer > .privacy {
+            margin-top: 1rem;
+            font-family: sans-serif;
+            color: #585858;
+            font-size: .7rem;
+            line-height: 1.2rem;
+            padding:0 .5rem
+      }
+}

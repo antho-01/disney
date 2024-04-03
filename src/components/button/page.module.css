@@ -1,0 +1,10 @@
+.button {
+      padding:.9rem 1.5rem;
+      font-size: 1.15rem;
+      border-radius: 4rem;
+      border: none;
+      font-weight: bold;
+      background-color: rgb(255, 0, 195);
+      color: white;
+      letter-spacing: .3rem;
+}

@@ -1,0 +1,468 @@
+.header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+}
+
+.navigation {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      padding: .3rem 3rem;
+      gap: 2rem;
+      background-color: white;
+    
+}
+
+.imgContainer {
+      position: relative;
+      width: 7%;
+      height: 3rem;
+}
+
+.imgContainer img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+}
+
+.dropDown {
+      display: block;
+}
+
+.dropDownButton {
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 1.3rem 1.5rem;
+      width: 5rem;
+      transition: all .5s;
+      font-size: .83rem;
+
+}
+
+.dropDownButton:hover {
+      color: rgb(45, 45, 255);
+}
+
+.dropDownList {
+      margin-top: 0;
+      display: none;
+      position: absolute;
+      width: 2rem;
+      height: auto;
+      width: inherit;
+      background-color: #1d1d1d;
+      padding: .8rem 0;
+      padding:0 1.5rem ;
+}
+
+
+
+.list {
+      list-style: none;
+      margin: 1.5rem 0;
+      transition: all .2s;
+      color: white;
+      font-size: .9rem;
+      font-family: sans-serif;
+}
+
+.list:hover {
+      color: rgb(92, 92, 255);
+}
+
+.dropDown:hover > .dropDownList {
+      display: block;
+
+}
+
+.dropDown2:hover > .dropDownList2 {
+      display: block;
+}
+
+.hamburger {
+      display: none;
+}
+
+.burger1, .burger2 {
+      width: 1.5rem;
+      height: .2rem;
+      margin: .2rem;
+      background-color: black;
+}
+
+.check {
+      display: none;
+}
+
+.button {
+      display: none;
+      background-color: transparent;
+      border-radius: 100rem;
+      padding: .3rem .6rem ;
+      position: relative;
+}
+
+.button::before {
+      display: block;
+      content: " ";
+      background-color: rgb(29, 14, 8);
+      width: 1.4rem;
+      height: .12rem;
+      position:absolute;
+      top: 1rem;
+      left: 0;
+      transition: all .5s;
+}
+
+
+
+.button::after {
+      display: block;
+      content: " ";
+      background-color: rgb(29, 14, 8);
+      width: 1.4rem;
+      height: .12rem;
+      position:absolute;
+      bottom: 1rem;
+      left: 0;
+      transition: all .5s;
+}
+
+.anchor {
+      color: white;
+}
+
+.anchor:hover {
+      color: blue;
+}
+
+
+/* smalll navigation starts here */
+.smallNavigation {
+      display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+      .smallNavigation {
+            background-color: rgb(238, 237, 237);
+            max-width: 100%;
+            position: absolute;
+            top: 2.62rem;
+            left: 0;
+            right: 0;
+            display: none;
+            transition: all 2s ease-in-out;
+      }
+
+      .horizontalRule {
+            width: 100%;
+            height: .1rem;
+            background-color: gray;
+      }
+
+      .sDropDown , .sDropDown1 {
+            position: relative;
+            display: block;
+      }
+
+      
+
+      .sDropDownButton {
+            margin-bottom: .5rem;
+            margin-top: 1rem;
+            display: block;
+            margin-left: .5rem;
+            font-size: .75rem;
+            display: flex;
+            justify-content: space-between;
+            
+
+      }
+
+      .sDropDownButton1 {
+            display: block;
+            padding-bottom: .5rem;
+            margin: 1rem 0rem .3rem .5rem; 
+            font-size: .75rem;
+            display: flex;
+            justify-content: space-between;
+
+      }
+
+      .sList, .sList1 {
+            display: none;
+            list-style-type: none;
+           
+      }
+ 
+      .sItems {
+            font-size: .7rem;
+            padding: .8rem;
+            border: .1px solid #ccc;
+            box-shadow: 1px -1px 2px 2px rgba(135, 135, 135, 0.2);
+      }
+
+      .sCheck, .sCheck1 {
+            display: none;
+      }
+
+      .icon, .icon1 {
+            display: block;
+            text-align: right;
+            padding: .1rem .5rem 0 0;
+            transition: all .3s ease-in-out;
+      }
+
+      .sCheck:checked + .sDropDownButton .icon {
+            transform: rotate(90deg);
+      }
+
+      .sCheck1:checked + .sDropDownButton1 .icon1 {
+            transform: rotate(90deg);
+      }
+
+      /* .sDropDown:hover .sList {
+            display: block;
+      } */
+
+      .sDropDown > .sCheck:checked + .sDropDownButton + .sList  {
+            display: block;
+      }
+
+      .sDropDown1 >.sCheck1:checked + .sDropDownButton1 + .sList1 {
+            display: block;
+      }
+
+     
+
+      
+
+      .imgContainer {
+            width: 3rem;
+            height: 2rem;
+            margin: 0 auto;
+            position:relative;
+
+      }
+
+      .imgContainer img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+      }
+
+      .dropDown {
+            display: none;
+            position: absolute;
+            top: 70%;
+            left: 0rem;
+            color: white
+      }
+
+      
+
+      .button {
+            display: block;
+            position: absolute;
+            border-radius: none;
+            border: none;
+            left: .5rem;
+            
+      }
+
+      .check:checked + .button ~ .smallNavigation {
+            display: block
+      }
+
+      /* .check:checked + .button ~ .dropDown2 {
+      display: block
+      } */
+
+
+
+      .check:checked + .button::after {
+           transform: rotate(45deg);
+           position: absolute;
+           top: 1rem;
+           
+           
+      }
+
+      .check:checked + .button::before {
+            transform: rotate(-45deg);
+            position: absolute;
+            bottom: 1.2rem;
+       }
+
+       .dropDownButton {
+            display: inline-block;
+            padding: 1rem;
+       }
+
+       .dropDownButton2 {
+            display: inline-block;
+            padding-top: 2rem;
+       }
+
+     
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+      .smallNavigation {
+            background-color: rgb(238, 237, 237);
+            max-width: 100%;
+            position: absolute;
+            top: 3.11rem;
+            left: 0;
+            right: 0;
+            display: none;
+            transition: all 2s ease-in-out;
+      }
+
+      .horizontalRule {
+            width: 100%;
+            height: .1rem;
+            background-color: gray;
+      }
+
+      .sDropDown , .sDropDown1 {
+            position: relative;
+            display: block;
+      }
+
+      
+
+      .sDropDownButton {
+            margin-bottom: .5rem;
+            margin-top: 1rem;
+            display: block;
+            margin-left: .5rem;
+            font-size: .75rem;
+            display: flex;
+            justify-content: space-between;
+            
+
+      }
+
+      .sDropDownButton1 {
+            display: block;
+            padding-bottom: .5rem;
+            margin: 1rem 0rem .3rem .5rem; 
+            font-size: .75rem;
+            display: flex;
+            justify-content: space-between;
+
+      }
+
+      .sList, .sList1 {
+            display: none;
+            list-style-type: none;
+           
+      }
+ 
+      .sItems {
+            font-size: .7rem;
+            padding: .8rem;
+            border: .1px solid #ccc;
+            box-shadow: 1px -1px 2px 2px rgba(135, 135, 135, 0.2);
+      }
+
+      .sCheck, .sCheck1 {
+            display: none;
+      }
+
+      .icon, .icon1 {
+            display: block;
+            text-align: right;
+            padding: .1rem .5rem 0 0;
+            transition: all .3s ease-in-out;
+      }
+
+      .sCheck:checked + .sDropDownButton .icon {
+            transform: rotate(90deg);
+      }
+
+      .sCheck1:checked + .sDropDownButton1 .icon1 {
+            transform: rotate(90deg);
+      }
+
+      /* .sDropDown:hover .sList {
+            display: block;
+      } */
+
+      .sDropDown > .sCheck:checked + .sDropDownButton + .sList  {
+            display: block;
+      }
+
+      .sDropDown1 >.sCheck1:checked + .sDropDownButton1 + .sList1 {
+            display: block;
+      }
+
+
+      .imgContainer {
+            width: 6rem;
+            height: 2.5rem;
+            margin: 0 auto;
+            position:relative;
+
+      }
+
+      .imgContainer img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+      }
+
+      .dropDown {
+            display: none;
+            position: absolute;
+            top: 70%;
+            left: .5rem;
+            color: white
+      }
+
+      .button {
+            display: block;
+            position: absolute;
+            border-radius: none;
+            border: none;
+            left: 3rem;
+            
+      }
+
+      .check:checked + .button ~ .smallNavigation {
+            display: block
+      }
+
+      .check:checked + .button::after {
+           transform: rotate(45deg);
+           position: absolute;
+           top: 1rem;
+           
+           
+      }
+
+      .check:checked + .button::before {
+            transform: rotate(-45deg);
+            position: absolute;
+            bottom: 1.2rem;
+       }
+
+     
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+      .dropDownButton {
+            font-size: .65rem;
+      }
+
+      .dropDownButton2 {
+            font-size: .65rem;
+      }
+}
